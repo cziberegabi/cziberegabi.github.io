@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap</title>
+
+<!-- Bootstrap könyvtár behúzása -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+<div class="container">
+<a href="https://google.hu" class="btn btn-info btn-block btn-lg active" role="button" target="_blank" style="background-color:navy">Google</a>
+
+<div class="btn-group">
+	<button type="button" class="btn btn-primary">1</button>
+	<button type="button" class="btn btn-primary">2</button>
+	<div class="btn-group">
+		<button type="button" class="btn btn-primary">3</button>
+		<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+		<ul class="dropdown-menu" role="menu">
+			<li><button type="button" class="btn btn-primary">3a</button></li>
+			<li><button type="button" class="btn btn-primary">3b</button></li>
+		</ul>
+	</div>
+</div>
+<br>
+<br>
+
+<a href="https://google.hu" class="btn btn-info btn-lg" style="background-color:navy" target="_blank"><span class="glyphicon glyphicon-search"></span> Keresés</a>
+
+<br>
+<br>
+
+<a href="https://google.hu" target="_blank">Google <span class="badge">5</span></a>
+<br><br>
+<button type="button" class="btn btn-primary"><a href="https://google.hu" target="_blank" style="color:white">Google <span class="badge">7</span></a></button>
+
+<br>
+<br>
+
+<div class="progress">
+	<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+	<p style="color: black; position: absolute; left: 0;right:0;">60%</p>
+	</div>
+</div>
+
+<div class="progress">
+<div class="progress-bar progress-bar-success" role="progessbar" style="width:40%">A</div>
+<div class="progress-bar progress-bar-info" role="progessbar" style="width:10%">B</div>
+<div class="progress-bar progress-bar-danger" role="progessbar" style="width:50%">C</div>
+</div>
+
+<ul class="pagination pagination-lg">
+	<li><a href="https://google.hu" target="_blank">1</a></li>
+	<li class="disabled"><a href="https://google.hu" target="_blank">2</a></li> <!--Javascript-tel lehet letiltani hogy ne töltsön be az oldal-->
+	<li><a href="https://google.hu" target="_blank">3</a></li>
+</ul>
+
+<ul class="breadcrumb">
+	<li><a href="https://google.hu" target="_blank">1</a></li>
+	<li><a href="https://google.hu" target="_blank">2</a></li>
+	<li><a href="https://google.hu" target="_blank">3</a></li>
+</ul>
+
+<a href="#demo" class="btn btn-info" data-toggle="collapse">adatok</a>
+<div id="demo" class="collapse">gdfhfgdfgdf</div>
+
+<ul class="pager">
+	<li><a href="https://google.hu">elõzõ</a></li>
+	<li><a href="https://google.hu">következõ</a></li>
+</ul>
+
+<ul class="list-group">
+	<a href="https://google.hu" class="list-group-item">elem 1</a>
+	<a href="https://google.hu" class="list-group-item">elem 2</a>
+	<a href="https://google.hu" class="list-group-item">elem 3</a>
+</ul>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">részletek</button>
+<div id="demo1" class="collapse">fdfsdf sd f fd fd fd ddf d fd</div>
+
+<div class="panel panel-default">
+	<div class="panel panel-heading">PH</div>
+	<div class="panel panel-body">PH</div>
+	<div class="panel panel-footer">PH</div>
+</div>
+
+<div class="panel-group">
+	<div class="panel panel-info">
+		<div class="panel-heading">
+		<p class="panel-title"><a data-toggle="collapse" href="#collapse1">Collapsible</a></p>
+		</div>
+		<div id="collapse1" class="panel-collapse collapse">
+			<div class="panel-body">body</div>
+			<div class="panel-footer">footer</div>
+		</div>
+	</div>
+</div>
+
+<ul class="nav nav-tabs">
+	<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+	<li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+	<li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+</ul>
+
+<div class="tab-content">
+	<div id="home" class="tab-pane fade in active">
+	<p>szöveg</p>
+	</div>
+	<div id="menu1" class="tab-pane fade">
+	<p>szöveg1</p>
+	</div>
+	<div id="menu2" class="tab-pane fade">
+	<p>szöveg2</p>
+	</div>
+</div>
+<br><br>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="https://google.com/drive" target="_blank">DRIVE</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="https://google.com/maps" target="_blank">MAPS</a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
+				<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Page 1-1</a></li>
+					<li><a href="#">Page 1-2</a></li>
+					<li><a href="#">Page 1-3</a></li>
+				</ul>
+      </li>
+			<li><a href="https://google.com/maps" target="_blank">MAPS3</a></li>
+			<li><a href="https://google.com/maps" target="_blank">MAPS4</a></li>
+		</ul>
+		
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#"><span class="glyphicon glyphicon-user"></span> Regisztráció</a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Bejelentkezés</a></li>
+		</ul>
+		
+		<form class="navbar-form navbar-left" action="BS.html">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Search">
+				<div class="input-group-btn">
+					<button class="btn btn-default" type="submit">
+					<i class="glyphicon glyphicon-search"></i>
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</nav>
+
+
+<form class="form-horizontal" action="BS.html">
+	<div class="form-group">
+		<label class="control-label col-sm-2" for="email">Email:</label>
+		<div class="col-sm-10">
+		<input type="email" class="form-control" id="email">
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-2" for="pwd">Jelszó:</label>
+		<div class="col-sm-10">
+		<input type="password" class="form-control" id="pwd">
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-10">
+			<div class="checkbox">
+				<label><input type="checkbox"> Remember me </label>
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-10">
+			<button type="submit" class="btn btn-default"> Submit </button>
+		</div>
+	</div>
+</form>
+
+<!--
+<form>
+	<div class="form-group">
+		<label for="user">Felhasználó:</label>
+		<input type="text" class="form-control" id="user">
+	</div>
+	<div class="form-group">
+		<label for="pwd">Jelszó:</label>
+		<input type="password" class="form-control" id="pwd">
+	</div>
+</form>
+
+-->
+
+<div class="form-group">
+	<label for="comment"> Comment:</label>
+	<textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+
+
+<div class="checkbox-inline">
+	<label><input type="checkbox" value="">Elso</label>
+</div>
+
+<div class="checkbox-inline">
+	<label><input type="checkbox" value="" disabled>Masodik</label>
+</div>
+
+<div class="radio">
+	<label><input type="radio" name="optradio" checked>1</label>
+</div>
+
+<div class="radio">
+	<label><input type="radio" name="optradio">2</label>
+</div>
+
+<div class="radio disabled">
+	<label><input type="radio" name="optradio" disabled>3</label>
+</div>
+
+<div class="form-group">
+	<label for="select1">Válassz:</label>
+	<select class="form-control" id="select1">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+	</select>
+</div>
+	
+<!--
+<form class="form-horizontal">
+	<div class="form-group">
+		<label class="control-label col-sm-2" for="email">Email:</label>
+		<div class="col-sm-10">
+		<p class="form-control-static">valami</p>
+		</div>
+	</div>
+</form>
+-->
+
+<form>
+	<div class="input-group">
+		<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+		<input id="email" type="text" class="form-control" name="email" placeholder="Email">
+	</div>
+	
+	<div class="input-group">
+		<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+		<input id="password" type="password" class="form-control" name="password" placeholder="Password">
+	</div>
+	
+</form>
+	
+<form class="form-horizontal">
+	<div class="form-group has-success has-feedback">
+		<label class="col-sm-2 control-label">Focused</label>
+		<div class="col-sm-10">
+			<input class="form-control" id="focusedInput" type="text" value="">
+			<span class="glyphicon glyphicon-ok form-control-feedback"></span>
+		</div>
+	</div>
+</form>
+	
+<form>
+	<div class="form-group form-group-lg">
+	<label for="inputsm">Small</label>
+	<input class="form-control input-lg" id="inputsm" type="text">
+	<span class="help-block">help szöveg</span>
+	</div>
+</form>
+
+<!--left-aligned-->
+<div class="media">	
+	<div class="media-left media-middle">
+		<img src="nyil.jpg" class="media-object" style="width:30px">
+	</div>
+	<div class="media-body">
+		<p class="media-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<small><i> Posted on February 19, 2016</i></small></p>
+	</div>
+</div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel"> <!--Slide-->
+
+	<!--Indikátorok-->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>
+	
+	<!--wrepper a slide-okhoz-->
+	<div class="carousel-inner">
+		<div class="item active">
+			<img src="https://wallpapercave.com/wp/s3X06zT.jpg" alt="T01">
+		</div>
+		<div class="item">
+			<img src="https://wallpapercave.com/wp/wp1920231.jpg" alt="T02">
+		</div>
+		<div class="item">
+			<img src="https://i.ytimg.com/vi/gRKKvzuOQEs/maxresdefault.jpg" alt="T03">
+		</div>
+	</div>
+	
+	<!--left és right-->
+	<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+		<span class="sr-only">Next</span>
+	</a>	
+</div>
+
+
+	
+</div>
+</body>
+</html>
